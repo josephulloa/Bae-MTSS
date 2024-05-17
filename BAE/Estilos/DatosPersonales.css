@@ -1,0 +1,102 @@
+/* Estilos para el formulario de Datos Personales */
+
+/* Estilos generales */
+.cuerpoDatos {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .SecondP {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo {
+    margin-top: 0;
+  }
+  
+  /* Estilos para los inputs */
+  .input {
+    margin-bottom: 20px;
+  }
+
+  .inputDate{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .inputSize {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .selectSize {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .eboton {
+    color: white;
+    background-color: #182951;
+    padding: 1%;
+    width: 300px;
+    margin-left: 40%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .fin1{
+    background-color: #182951;
+  }
+  
+  /* Estilos para el paso del formulario */
+  #stepper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 600px) {
+    .inputSize,
+    .selectSize {
+      width: 100%;
+    }
+  }
+  
+
+
+#toast-container > .toast-error {
+  position: fixed;
+  left: 40%;
+}

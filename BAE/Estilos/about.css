@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#equipo{
+    margin: center;
+  
+}
+
+#descripcion{
+    text-align: center;
+  
+}
+
+
+
+.colaborador {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.colaborador img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.colaborador h3, .colaborador p {
+    margin: 5px;
+}
+
+.rayita{
+    background-color:#CFAC65;
+    height: 3px;
+}
+.about-texto{
+    text-align: center;
+}
+
+.header-titulo{
+    text-align: center;
+    
+}
+
+.fin3{
+    background-color:#182951;
+}

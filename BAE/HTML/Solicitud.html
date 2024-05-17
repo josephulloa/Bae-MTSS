@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/solicitud.css">
+    <title>Solicitudes</title>
+</head>
+<body>
+    <header>
+        <iframe src="header.html" width="100%" height="100%" frameborder="0"></iframe>
+    </header>
+    <div class="profileContainer">
+        <h2 class="profileTitle">Información del Solicitante</h2>
+        <div class="profileHeader">
+            <div class="profileName">
+                <h3>Nombre del Solicitante</h3>
+                <p><span class="letra" id="NombreSoli"></span> <span class="letra" id="Apellido1Soli"></span> <span class="letra" id="Apellido2Soli"></span></p>
+            </div>
+        </div>
+        <div class="profileInfo ">
+            <h3>Datos Personales</h3>
+            <div class="profilePersonalInfo">
+                <p>Cedula: <span id="cedSoli"></span></p>
+                <p>Genero: <span id="genSoli"></span></p>
+                <p>Fecha de nacimiento: <span id="fechSoli"></span></p>
+                <p>Tipo identificación: <span id="tipoIdentificacionSoli"></span></p>
+            </div>
+        </div>
+        <div class="profileInfo">
+            <h3>Información de Contacto</h3>
+            <p>Numero telefónico: <span id="telefonoSoli"></span></p>
+            <p>Correo electrónico: <span id="emailSoli"></span></p>
+            <p>Cuenta IBAN: <span id="cuentaIBANSoli"></span></p>
+        </div>
+        <div class="profileInfo">
+            <h3>Situación Personal</h3>
+            <p>Estado civil: <span id="estadoCivilSoli"></span></p>
+            <p>Cantidad de dependientes: <span id="dependientesSoli"></span></p>
+            <p>Núcleo familiar: <span id="nucleoFSoli"></span></p>
+            <p>Nivel educativo: <span id="nivelEduSoli"></span></p>
+            <p>Situación laboral: <span id="situacionLabSoli"></span></p>
+            <p>Identidad étnica: <span id="etniaSoli"></span></p>
+        </div>
+        <div>
+            <div id="pdfContainer" class="profileInfo">
+                <h3>Archivos de Solicitud</h3>
+                <p>(Cedula por ambos lados y Certificacion IBAN)</p>
+            </div>
+        </div>
+        <div>
+            <div id="cartContainer" class="profileInfo">
+                <h3>Carta Compromiso</h3>
+            </div>
+        </div>
+        <div>
+            <div style="display: none;" id="files2Container" class="profileInfo">
+                <h3>Situación Personal</h3>
+                <p>(Bitacora y Plan Individual)</p>
+                <h3 id="mensaje" style="text-align: center; color: #00000054;">El participante no ha subido esta Información</h3>
+            </div>
+        </div>
+    </div>
+    <button class="gboton" onclick="redireccionar()">Procesar Solicitud</button>
+    <hr class="espacio">
+    <footer class="fin1">
+        <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+    </footer>
+    <script src="../JS/solicitud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

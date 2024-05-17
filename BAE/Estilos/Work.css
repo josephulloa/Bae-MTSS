@@ -1,0 +1,136 @@
+
+.cabeceras{
+     color: #4f4e63; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.raya{
+    background-color: #CFAC65;
+    height: 3px;
+}
+
+.primerC{
+    color: #4f4e63;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.segundoC{
+    color: #4f4e63;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.tercerC{
+    color: #4f4e63;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.cuartoC{
+    color: #4f4e63;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.cincoC{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.seisC{
+    color: #000;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+   
+}
+
+
+.sub-titulos{
+    color:  #182a52;
+    font-size: 26px;
+}
+
+.parrafos{
+    color: rgb(132, 133, 137);
+    font-size: 16px;
+    width: 50%;
+}
+
+
+.Subscribir {
+	background-color: #ffffff;
+	cursor:pointer;
+	text-decoration:none;
+    padding: 2%;
+    width: 200px;
+}
+
+.textoBton2{
+    text-decoration:none;
+    color: black;
+}
+
+.Tsecundario{
+    color: #162a54;
+    text-align: center;
+}
+
+.ContenedorInfo{
+   width: 30vw; 
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #182951;
+
+}
+.container-contacto{
+    color: white;
+}
+.pie {
+    height: 100px;
+    width: 500px;
+}
+
+.fin2{
+    background-color: #182951;
+}
+.texto{
+    text-align: center;
+}

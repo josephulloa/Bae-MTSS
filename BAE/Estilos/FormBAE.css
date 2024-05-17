@@ -1,0 +1,153 @@
+.headerForm {
+    background-color: #182951;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bottonback {
+    background-color: #182951;
+    color: #FFFFFF;
+    border: none;
+    text-decoration: none;
+    padding: 3%;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+}
+
+.img {
+    margin-right: 24%;
+    height: 95px;
+    width: 50%;
+    background-color: #182951;
+}
+
+.linea1 {
+    background-color: #CFAC65;
+    height: 3px;
+
+}
+
+.linea2 {
+    background-color: #182951;
+    height: 3px;
+}
+
+.formBody1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.tituloForm {
+    margin-top: 0;
+}
+
+.formP1 {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.content {
+    margin-bottom: 15px;
+    width: 50%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #182951;
+    color: #FFFFFF;
+    margin-left: 59px;
+}
+
+.FirtsP {
+    font-size: large;
+}
+
+.logo {
+    margin-right: 45%;
+    height: 100px;
+    width: 70%;
+    margin-top: 55px;
+}
+
+.divBoton {
+    margin-left: 30%;
+}
+
+.eboton {
+    background-color: #182951;
+    color: #FFFFFF;
+    padding: 1%;
+    width: 50%;
+    margin-left: 59px;
+    text-decoration: none;
+}
+
+.l2 {
+    background-color: #CFAC65;
+    height: 5px;
+
+}
+
+p {
+    font-family: "Henderson";
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #182951;
+
+}
+
+.container-contacto {
+    color: white;
+}
+
+.pie {
+    height: 100px;
+    width: 500px;
+}
+
+.espacio {
+    background-color: #182951;
+    height: 3px;
+}
+
+.espacio1 {
+    background-color: #CFAC65;
+    height: 3px;
+}
+
+.fin1 {
+    background-color: #182951;
+}
+
+#stepper ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stepper li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#stepper li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#toast-container > .toast-error {
+    position: fixed;
+    left: 40%;
+}

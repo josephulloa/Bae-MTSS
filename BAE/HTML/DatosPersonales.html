@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="../Estilos/DatosPersonales.css" />
+  <link rel="stylesheet" href="../Estilos/stepper.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datos personales</title>
+</head>
+
+<body class="cuerpoDatos">
+  <iframe src="header.html" width="100%" height="100%" frameborder="0"></iframe>
+  <div id="stepper">
+    <div class="step" data-step="1"><span>Paso 1</span>
+      <div class="circle">1</div>
+    </div>
+    <div class="step" data-step="2"><span>Paso 2</span>
+      <div class="circle">2</div>
+    </div>
+    <div class="step" data-step="3"><span>Paso 3</span>
+      <div class="circle">3</div>
+    </div>
+    <div class="step" data-step="4"><span>Paso 4</span>
+      <div class="circle">4</div>
+    </div>
+  </div>
+  <div class="SecondP">
+    <div class="acomodar">
+      <h1 class="titulo">Datos Personales</h1>
+      <div class="input">
+        <div class="input">
+          <label for="nombre">Nombre:</label>
+          <input class="inputSize" type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Nombre Completo" />
+        </div>
+        <div class="input">
+          <label for="nombre">1º Apellido:</label>
+          <input class="inputSize" type="text" id="PrimerApellido" name="PrimerApellido" placeholder="Primer Apellido" />
+        </div>
+        <div class="input">
+          <label for="nombre">2º Apellido:</label>
+          <input class="inputSize" type="text" id="SegundoApellido" name="SegundoApellido"
+          placeholder="Segundo Apellido" />
+        </div>
+      </div>
+      <div class="input" id="cedula_input">
+        <div class="input">
+          <label for="cedula">Cedula:</label>
+          <input class="inputSize" type="text" id="cedula" name="cedula" placeholder="Numero de Cedula" />
+        </div>
+        <div class="input">
+          <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+          <br>
+          <input class="inputDate" type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+        </div>
+        <div class="input">
+          <label for="sexo">Sexo:</label>
+          <select class="selectSize" name="sexo" id="sexo">
+            <option value="">Seleccione</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="PrefieroNoDecirlo">Prefiero No Decirlo</option>
+            <option value="InterSex">InterSex</option>
+          </select>
+        </div>
+      </div>
+      <div class="input">
+        <label for="estado_civil">Estado Civil:</label>
+        <select class="selectSize" name="estado_civil" id="estado_civil">
+          <option value="">Seleccione</option>
+          <option value="UnionLibre">Union Libre</option>
+          <option value="Casado">Casado</option>
+          <option value="Separado">Separado</option>
+          <option value="Divorciado">Divorciado</option>
+          <option value="Viudo">Viudo</option>
+          <option value="Soltero">Soltero</option>
+          <option value="UnionDeHecho">Union de hecho</option>
+          <option value="Desconocido">Desconocido</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="nivel_educativo">Nivel Educativo:</label>
+        <select class="selectSize" name="nivel_educativo" id="nivel_educativo">
+          <option value="">Seleccione</option>
+          <option value="SinFormacion">Sin Formacion</option>
+          <option value="PrimariaCompleta">Primaria Completa</option>
+          <option value="PrimariaIncompleta">Primaria Incompleta</option>
+          <option value="SecundariaCompleta">Secundaria Completa</option>
+          <option value="SecundariaIncompleta">Secundaria Incompleta</option>
+          <option value="TecnicoINA">Tecnico INA, (Escuela,Comercial)</option>
+          <option value="UniversidadCompleta">Universidad Completa</option>
+          <option value="UniversidadIncompleta">
+            Universidad Incompleta
+          </option>
+          <option value="EducDiversificadaVocacional">
+            Educ.Diversificada Vocacional
+          </option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="situacion_laboral">Situación Laboral:</label>
+        <select class="selectSize" name="situacion_laboral" id="situacion_laboral">
+          <option value="">Seleccione</option>
+          <option value="Desempleado">Desempleado</option>
+          <option value="Subempleado">Subempleado</option>
+          <option value="Ocupado">Ocupado</option>
+          <option value="Estudiante">Estudiante</option>
+        </select>
+      </div>
+      <div class="input">
+        <label class="description" for="cantidad_dependientes">Cantidad Dependientes: Personas que dependen
+          económicamente de mi
+          (indicar número de personas):</label>
+          <input class="inputSize" placeholder="Seleccione cantidad" type="number" id="cantidad_dependientes" min="0"
+          max="10" name="cantidad_dependientes" />
+        </div>
+        
+        <div class="input">
+          <label for="nucleo_familiar">Nucleo Familiar:</label>
+          <select class="selectSize" name="nucleo_familiar" id="Nucleo_familiar">
+            <option value="">Seleccione</option>
+            <option value="PadreMadreAmbos">Padre, madre o ambos</option>
+            <option value="EsposaCompañera">Esposa (o) Compañera (o)</option>
+            <option value="HijosHermanos">Hijos (as) y Hermanos (as)</option>
+            <option value="PadresHijo">Padres e Hijo (s)</option>
+            <option value="AbuelosHermanos">Abuelos y hermanos</option>
+            <option value="Hijos">Hijos (as)</option>
+          <option value="OtrosFamiliares">Otros Familiares</option>
+          <option value="EsposoHijos">
+            Esposo (a) o Compañero (a) e Hijos (as)
+          </option>
+          <option value="PadresHermanos">Padres y Hermano (s)</option>
+          <option value="ViveSolo">Vive Solo (a)</option>
+          <option value="Hermanos">Hermano (s)</option>
+          <option value="AbueloAbuelaAmbos">Abuelo, abuela o ambos</option>
+          <option value="HijoNieto">Hijo (a) y Nieto (s)</option>
+          <option value="PadresHermanosHijos">
+            Padres, hermano (as), Hijos (as)
+          </option>
+          <option value="Nietos">Niet@ (s)</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="cuenta_iban">Cuenta IBAN:</label>
+        <input class="inputSize" type="text" id="cuenta_iban" placeholder="Numero de cuenta" name="Cuenta_iban" />
+      </div>
+      <div class="input">
+        <label for="tipo_identificacion">Tipo de Identificación:</label>
+        <select class="selectSize" name="tipo_identificacion" id="tipo_identificacion">
+          <option value="">Seleccione</option>
+          <option value="Nacional">Nacional</option>
+          <option value="Residente">Residente</option>
+          <option value="ResidenteTemporal">Residente Temporal</option>
+          <option value="PersonaExtranjera">Persona Extranjera</option>
+          <option value="PersonaRefugiada">Persona Refugiada</option>
+          <option value="Otro">Otro</option>
+          <option value="Desconocido">Desconocido(a)</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="telefono">Teléfono:</label>
+        <input class="inputSize" type="text" id="telefono" name="telefono" placeholder="Numero telefonica" />
+      </div>
+      <div class="input">
+        <label for="email">Email:</label>
+        <input class="inputSize" type="email" id="email" name="email" placeholder="Email" />
+      </div>
+      <div class="input">
+        <label for="identidad_etnica">Identidad Étnica:</label>
+        <select class="selectSize" name="identidad_etnica" id="identidad_etnica">
+          <option value="">Seleccione</option>
+          <option value="BlancoOMestizo">Blanco o mestizo</option>
+          <option value="Indigena">Indígena</option>
+          <option value="NegraAfrodescendiente">
+            Negra, afrodescendiente o mulata
+          </option>
+          <option value="Oriental">Oriental (asiática)</option>
+          <option value="Otra">Otra</option>
+          <option value="NoEspecificada">No especificada</option>
+        </select>
+      </div>
+      <div style="display: none;" class="TrirP" id="body_otra_identidad_etnica">
+        <h2>Seccion Respuesta Otra Identidad Étnica sin titulo</h2>
+        <p>
+          Anotar la identidad étnica con la que se identifica a continuación
+        </p>
+        <div class="input">
+          <label for="otra_identidad_etnica">Otra Identidad Étnica:</label>
+          <input class="inputSize" type="text" id="otra_identidad_etnica" name="otra_identidad_etnica"
+          placeholder="Indicar" />
+        </div>
+      </div>
+      <div>
+        <button class="eboton" onclick="guardarDatosFormulario()" id="subir">
+          <a href="http://localhost:5500/BAE/HTML/DatosAdjuntos.html"></a>Enviar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="fin1">
+    <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+  </div>
+  <script src="../JS/BAE.js"></script>
+  <script src="../JS/stepper.js"></script>
+</body>
+
+</html>

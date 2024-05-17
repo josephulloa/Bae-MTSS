@@ -1,0 +1,63 @@
+/* Estilos para el contenedor del stepper */
+#stepper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para cada paso del stepper */
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* Estilos para el círculo */
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent; /* Borde transparente por defecto */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Estilos para el paso activo del stepper */
+.step.active .circle {
+  border-color: #007bff; /* Borde del color correspondiente */
+  color: #007bff; /* Color del número */
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el paso completado del stepper */
+.step.completed .circle {
+  border-color: #28a745; /* Borde verde */
+  background-color: #28a745; /* Fondo verde */
+  color: #ccc;
+}
+
+/* Estilos para el paso actualmente en progreso del stepper */
+.step.in-progress .circle {
+  border-color: #ffc107; /* Borde amarillo */
+  color: #ffc107; /* Color del número */
+}
+
+/* Estilos para el paso siguiente del stepper */
+.step.active + .step .circle {
+  border-color: #ffc107; /* Borde amarillo */
+}
+
+/* Estilos para el último paso del stepper */
+.step:last-child .circle {
+  border-color: #ccc; /* Borde gris */
+}
+
+/* Estilos para el último paso activo del stepper */
+.step:last-child.active .circle {
+  border-color: #007bff; /* Borde del color correspondiente */
+}

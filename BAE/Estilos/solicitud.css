@@ -1,0 +1,164 @@
+/* Estilos del contenedor del perfil */
+.profileContainer {
+    background-color: #dfdfdf;
+    /* Fondo oscuro */
+    color: #000000;
+    /* Texto claro */
+    border: 1px solid #CFAC65;
+    /* Borde oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    margin: 16px auto;
+    /* Centra el contenedor horizontalmente */
+    max-width: 1000px;
+    /* Agrega una transición para suavizar los cambios de estilo */
+    transition: all 0.3s ease;
+}
+
+.letra{
+    font-size: 40px;
+}
+
+/* Agrega un efecto hover al contenedor del perfil para resaltarlo cuando el usuario pase el cursor sobre él */
+.profileContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del título del perfil */
+.profileTitle {
+    color: #182951;
+    /* Morado oscuro */
+    font-size: 2em;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Estilos del encabezado del perfil */
+.profileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Estilos del nombre del perfil */
+.profileName {
+    flex-grow: 1;
+}
+
+/* Estilos de la información del perfil */
+.profileInfo {
+    background-color: #ffffff;
+    /* Fondo oscuro para secciones */
+    padding: 16px;
+    border: 1px solid #CFAC65;
+    /* Borde oscuro */
+    border-radius: 8px;
+    margin-top: 20px;
+    /* Espacio entre secciones */
+}
+
+/* Estilos de los títulos de la información del perfil */
+.profileInfo h3 {
+    color: #182951;
+    /* Morado oscuro */
+    font-size: 1.8em;
+    margin-bottom: 16px;
+}
+
+/* Estilos para los párrafos dentro de la información del perfil */
+.profileInfo p {
+    margin: 12px 0;
+    font-size: 1.1em;
+}
+
+/* Estilos para las imágenes dentro de la información del perfil */
+.profileInfo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la sección de datos personales */
+.profilePersonalInfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+/* Estilos adicionales para la sección de datos personales */
+.profilePersonalInfo p {
+    margin: 8px 0;
+}
+
+/* Estilos para la sección de CV */
+.profileCvSection {
+    margin-top: 24px;
+}
+
+/* Estilos para los títulos de la sección de CV */
+.profileCvSection h3 {
+    color: #8a4baf;
+    /* Morado oscuro */
+    font-size: 1.8em;
+    margin-bottom: 16px;
+}
+
+/* Estilos para las listas dentro de la sección de CV */
+.profileCvSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de lista dentro de la sección de CV */
+.profileCvSection li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Estilos para la sección de fotos */
+.profilePhotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+/* Estilos para los títulos de las fotos */
+.profilePhotoTitle {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.fin1{
+    background-color: #182951;
+}
+
+.espacio{
+    background-color:#CFAC65;
+    height: 3px;
+}
+
+.gboton{
+    color: white;
+    background-color: #182951;
+    padding: 1%;
+    width: 400px;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 

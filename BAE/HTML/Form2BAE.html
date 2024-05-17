@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../Estilos/Form2BAE.css" />
+    <link rel="stylesheet" href="../Estilos/stepper.css" />
+    <title>Forms</title>
+</head>
+
+<body style="background-color:rgba(210, 208, 208, 0.192)">
+    <iframe src="header.html" width="100%" height="100%" frameborder="0"></iframe>
+    <div id="stepper">
+        <div class="step" data-step="1">
+            <span>Paso 1</span>
+            <div class="circle">1</div>
+        </div>
+        <div class="step" data-step="2">
+            <span>Paso 2</span>
+            <div class="circle">2</div>
+        </div>
+        <div class="step" data-step="3">
+            <span>Paso 3</span>
+            <div class="circle">3</div>
+        </div>
+        <div class="step" data-step="4">
+            <span>Paso 4</span>
+            <div class="circle">4</div>
+        </div>
+    </div>
+    <fieldset class="fieldset">
+        <legend>
+            <p class="titulo1">¡Felicidades!</p>
+        </legend>
+        <p class="cuerpo">
+            Nos complace informarte que has sido aceptado/a para
+            <br />
+            recibir los beneficios del programa de Búsqueda
+            <br />
+            Activa de Empleo (BAE). Este programa está diseñado para brindar
+            <br />
+            apoyo a individuos en su búsqueda de empleo y desarrollo
+            <br />
+            profesional, y estamos encantados de poder ofrecerte esta asistencia.
+            <br />
+            Para continuar recibiendo estos beneficios
+            <br />
+            y asegurarnos de que sigas siendo
+            <br />
+            elegible para el programa, necesitamos que completes
+            <br />
+            una serie de pasos administrativos.
+            <br />
+            Estos pasos son importantes para garantizar que recibas
+            <br />
+            el respaldo necesario en tu búsqueda de empleo.
+        </p>
+    </fieldset>
+    <br />
+    <div class="acomodar">
+        <hr class="linea" />
+        <div class="container">
+            <h4 class="titulo1">Descarga estos archivos para seguir con el proceso</h4>
+            
+            <button class="btnDescargar" id="descargar">
+                <strong>
+                    Descargar Bitácora BAE
+                </strong>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                </svg>
+            </button>
+            
+            <button class="btnDescargar" id="descargar2">
+                <strong>
+                    Descargar Plan Individual
+                </strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                    </svg>
+            </button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="files">
+            <div class="IBAN">
+                <p class="file-label"> Cargar Bitacora</p>
+                <label>(Solo archivos.PDF)</label>
+                <div class="file-input">
+                    <input type="file" id="documento4" class="inputfile" />
+                    <label for="documento4" class="input-label">
+                        <span>Elegir Archivo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M20 5h-4.18l-1.51-1.51C14.16 3.21 13.59 3 13 3h-2V1H9v2H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-1 14H5V8h14v11zm-10-2h2v-2h-2v2zm0-4h2v-2h-2v2zm4 4h2v-2h-2v2zm0-4h2v-2h-2v2z" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="ced">
+                <p class="file-label">Cargar Plan Individual</p>
+                <label>(Solo archivos.PDF)</label>
+                <div class="file-input">
+                    <input type="file" id="documento5" class="inputfile" />
+                    <label for="documento5" class="input-label">
+                        <span>Elegir Archivo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M20 5h-4.18l-1.51-1.51C14.16 3.21 13.59 3 13 3h-2V1H9v2H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-1 14H5V8h14v11zm-10-2h2v-2h-2v2zm0-4h2v-2h-2v2zm4 4h2v-2h-2v2zm0-4h2v-2h-2v2z" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <button class="gboton" onclick="guardarDocumentosEnLocalStorage2()">
+            Guardar Documentos
+        </button>
+        <br />
+        <br />
+
+    </div>
+
+
+    <div class="fin4">
+        <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+    </div>
+</body>
+
+<script src="../JS/BAE2.js"></script>
+<script src="../JS/stepper.js"></script>
+
+</html>

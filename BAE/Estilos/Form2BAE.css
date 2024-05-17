@@ -1,0 +1,170 @@
+.centrar{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.cuerpoText{
+    font-size: 19px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fieldset {
+    text-align: center;
+    border-radius: 20px;
+    border-color: #182951;
+    margin-bottom: 5%;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.cuerpo{
+    font-size: 22px;
+}
+
+.titulo1 {
+    text-align: center;
+    font-family: "Henderson";
+    font-size: 30px;
+}
+
+.btnFrorm2{
+    border-style: none;
+}
+
+.gboton{
+    color: white;
+    background-color: #182951;
+    padding: 1%;
+    width: 400px;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fin4{
+    background-color: #182951;
+}
+
+.linea{
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titulo1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btnDescargar {
+    background-color: #182951;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnDescargar:hover {
+    background-color: #182951;
+}
+
+.fa-file-download {
+    margin-right: 8px;
+}
+
+.bi-download{
+    font-weight: bold;
+}
+
+.ced,
+.IBAN {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.files {
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   margin-bottom: 3%;
+}
+
+
+/* inputsb style */
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+ }
+ 
+ .file-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 6px;
+ }
+ 
+ .file-input {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .input-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .input-label span {
+    font-size: 20px;
+ }
+ 
+ .input-label svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #182951;
+    /* Color Azul */
+    transition: fill 0.3s ease;
+ }
+ 
+ .inputfile:focus+.input-label {
+    background-color: #e6f7ff;
+    /* Color de fondo cuando el input está enfocado */
+ }
+ 
+ .inputfile:focus+.input-label svg {
+    fill: #0056b3;
+    /* Azul más oscuro */
+ }
+
+ #toast-container>.toast-error,
+#toast-container>.toast-success {
+   position: fixed;
+   left: 40%;
+}

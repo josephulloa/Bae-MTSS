@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAE</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://db.onlinewebfonts.com/c/0a6cef194e2d8ad747613a3695242db6?family=Henderson+Sans+W00+Basic+Bold"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/BAE.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bodyP">
+    <header class="fondo1">
+        <img class="logo" src="../img/MTSSBLANCO0.png" alt="logo">
+        <div class="divLinks">
+            <a class="aboutLink" href="Work.html">Como funciona</a>
+            <label class="aboutLink1">/</label>
+            <a class="aboutLink" href="about.html">Sobre Nosotros</a>
+            <label class="aboutLink1">/</label>
+            <label class="aboutLink" href="Admin.html" onclick="openModal()"> Funcionario BAE </label>
+        </div>
+    </header>
+    <div>
+        <hr class="espacio">
+        <hr class="espacio1">
+    </div>
+    <div>
+        <fieldset class="fieldset">
+            <legend>
+                <p class="titulo1">¿Quiénes somos?</p>
+            </legend>
+            <h3> Es una modalidad o subprograma que funciona mediante
+                <br>
+                el otorgamiento de TMC (Transferencia Monetaria Condicionada) dirigidas a las personas usuarias,
+                <br>
+                para que estas puedan cubrir procesos de intermediación de
+                <br>
+                empleo en el marco del SNE (Sistema Nacional de Empleo).
+                <br>
+                Las personas usuarias deben cumplir con las disposiciones que
+                <br>
+                establece el programa para poder obtener el beneficio.
+            </h3>
+        </fieldset>
+    </div>
+    <h1 class="caja2"> ¿Quieres formar parte de BAE? </h1>
+    <h1 class="caja2">
+        Requisitos :
+    </h1>
+    <div>
+        <div class="requisitos">
+            <div class="caja-requesito">
+                <ul>
+                    <h2>MUJERES Y PERSONAS CON DISCAPACIDAD</h2>
+                    <li>Entre los 18 a los 45 años. </li>
+                    <li>En situación de desempleo. </li>
+                    <li>En condición de pobreza básica y/o condición de pobreza extrema. </li>
+                    <li>Con disponibilidad horaria para realizar actividades
+                        propias del servicio de intermediación de empleo en el marco del SNE. </li>
+                        <li>Que cumplan con determinado perfil ocupacional y niveles ele empleabilidad,
+                            según los perfiles y requisitos que se establecen dentro
+                            las vacantes publicadas en la plataforma informática del SNE</li>
+                        </ul>
+                    </div>
+            <div class="caja-requesito">
+                <ul>
+                    <h2>PERSONAS JÓVENES</h2>
+                    <li>Entre los 18 a los 35 años.</li>
+                    <li>En situación de desempleo.</li>
+                    <li>En condición de pobreza básica y/o</li>
+                    <li>Condición de pobreza extrema.</li>
+                    <li>Con disponibilidad horaria para realizar actividades propias del servicio ele intermediación de
+                        empleo en el marco del SNE</li>
+                        <li>Que cumplan con determinado perfil ocupacional y niveles de empleabilidad, según los perfiles y
+                            requisitos que se establecen dentro las vacantes publicadas en la plataforma informática del
+                            SNE.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="divBoton">
+                <div class="prueba" >
+                    <hr class="espacio3">
+                    <button id="btn1" class="boton"><a class="textoBton" href="FormBAE.html" class="boton">Formar parte de BAE</a></button>
+                    <button id="btn2" class="boton textoBton" onclick="seguirProceso()" style="display: none;" class="boton"> Seguir con tu proceso </button>
+                    <hr class="espacio3">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal()" style="float:right;cursor:pointer;">&times;</span>
+                    <div id="passwordForm">
+                        <h2 id="tituloFuncinario"> Ingresar como funcionario</h2>
+                        <div class="inputLabel">
+                            <label for="user" id="userLabel">Ingrese el usuario:</label>
+                            <input type="user" class="inputs" id="user">
+                        </div>
+                        <br>
+                        <div class="inputLabel">
+                            <label for="password" id="passwordLabel"> Ingrese la contraseña:</label>
+                            <input type="password" class="inputs" id="password">
+                        </div>
+                        <br>
+                        <br>
+                        <button id="botonModal" onclick="checkPassword()">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+    <div class="fin">
+        <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+    </div>
+</body>
+<script src="../JS/BAE.js"></script>
+
+</html>

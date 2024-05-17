@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../Estilos/DatosAdjuntos.css">
+    <link rel="stylesheet" href="../Estilos/stepper.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Adjuntos</title>
+</head>
+
+<body>
+    <iframe src="header.html" width="100%" height="100%" frameborder="0"></iframe>
+    <div id="stepper">
+        <div class="step" data-step="1"><span>Paso 1</span>
+            <div class="circle">1</div>
+        </div>
+        <div class="step" data-step="2"><span>Paso 2</span>
+            <div class="circle">2</div>
+        </div>
+        <div class="step" data-step="3"><span>Paso 3</span>
+            <div class="circle">3</div>
+        </div>
+        <div class="step" data-step="4"><span>Paso 4</span>
+            <div class="circle">4</div>
+        </div>
+    </div>
+    <div class="formBody2">
+        <div class="FourP">
+            <h2 class="SecondP2">Anexo de documentos (Todos los documentos solicitados en esta seccion son obligatorios)
+            </h2>
+            <p class="SecondP2">**Carta de compromiso (se debe adjuntar en un solo documento firmada exactamente igual
+                que la firma en la
+                cédula)
+                Nombre del documento:
+                (Carta de Compromiso-"Nombre de la persona")
+                **Certificación IBAN
+                Internacional Bank Account Number (IBAN) es una estructura estandarizada de 22 dígitos que identifica
+                cuentas bancarias de fondos tanto a nivel nacional como internacional.
+                Esta certificación se solicita en el banco de manera digital y debe ser cargada en el siguiente espacio:
+                Nombre del documento:
+                (X-XXXX-XXXX-"Nombre de la persona")
+                **Cargar la cédula por ambos lados
+                (Formato PDF-Un solo documento)
+                Nombre del documento:
+                (Cédula-"sona")</p>
+        </div>
+        <div class="files">
+            <div class="IBAN">
+                <label for="documento2" class="file-label">Certificación IBAN</label>
+                <label> solo archivos .pdf</label>
+                <div class="file-input">
+                    <input type="file" accept="application/pdf" id="documento2" class="inputfile"
+                        data-multiple-caption="{count} archivos seleccionados" multiple />
+                    <label for="documento2" class="input-label">
+                        <span>Elegir archivo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M20 5h-4.18l-1.51-1.51C14.16 3.21 13.59 3 13 3h-2V1H9v2H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-1 14H5V8h14v11zm-10-2h2v-2h-2v2zm0-4h2v-2h-2v2zm4 4h2v-2h-2v2zm0-4h2v-2h-2v2z" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="ced">
+                <label for="documento3" class="file-label">Cédula por ambos lados</label>
+                <label> solo archivos .pdf</label>
+                <div class="file-input">
+                    <input type="file" id="documento3" class="inputfile"
+                        data-multiple-caption="{count} archivos seleccionados" multiple />
+                    <label for="documento3" class="input-label">
+                        <span>Elegir archivo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M20 5h-4.18l-1.51-1.51C14.16 3.21 13.59 3 13 3h-2V1H9v2H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-1 14H5V8h14v11zm-10-2h2v-2h-2v2zm0-4h2v-2h-2v2zm4 4h2v-2h-2v2zm0-4h2v-2h-2v2z" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button class="gboton" onclick="guardarDocumentosEnLocalStorage()">Guardar Documentos</button>
+    </div>
+    <div class="fin1">
+        <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+    </div>
+    <script src="../JS/stepper.js"></script>
+    <script src="../JS/BAE.js"></script>
+</body>
+
+</html>

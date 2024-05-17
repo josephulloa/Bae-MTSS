@@ -1,0 +1,109 @@
+.FourP {
+   width: 40%;
+   text-align: center;
+   margin-left: 30%;
+   margin-bottom: 3%;
+}
+
+.formBody2 {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.ced,
+.IBAN {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.files {
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   margin-bottom: 3%;
+}
+
+.SecondP2 {
+   font-size: 23px;
+}
+
+.gboton {
+   color: white;
+   background-color: #182951;
+   padding: 1%;
+   width: 200px;
+   margin-left: 43%;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-bottom: 2%;
+}
+
+.fin1 {
+   background-color: #182951;
+}
+
+/* inputsb style */
+.inputfile {
+   width: 0.1px;
+   height: 0.1px;
+   opacity: 0;
+   overflow: hidden;
+   position: absolute;
+   z-index: -1;
+}
+
+.file-label {
+   display: block;
+   font-size: 18px;
+   margin-bottom: 6px;
+}
+
+.file-input {
+   position: relative;
+   overflow: hidden;
+   background-color: #f0f0f0;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-label {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.input-label span {
+   font-size: 16px;
+}
+
+.input-label svg {
+   margin-left: 10px;
+   width: 24px;
+   height: 24px;
+   fill: #182951;
+   /* Color Azul */
+   transition: fill 0.3s ease;
+}
+
+.inputfile:focus+.input-label {
+   background-color: #e6f7ff;
+   /* Color de fondo cuando el input está enfocado */
+}
+
+.inputfile:focus+.input-label svg {
+   fill: #0056b3;
+   /* Azul más oscuro */
+}
+
+
+#toast-container>.toast-error,
+#toast-container>.toast-success {
+   position: fixed;
+   left: 40%;
+}

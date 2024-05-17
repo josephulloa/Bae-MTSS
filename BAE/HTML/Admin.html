@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/Admin.css">
+    <link rel="stylesheet" href="../Estilos/FormBAE.css">
+    <title>Guardar y Mostrar Archivos</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerForm">
+            <button class="bottonback" onclick="goBack()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
+                    <path fill-rule="evenodd"
+                        d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                </svg>
+            </button>
+            <img class="img" src="../img/MTSSBLANCO0.png" alt="">
+        </div>
+        <hr class="linea1">
+        <hr class="linea2">
+    </header>
+    <div class="opciones">
+        <h1 onclick="elegirOpcionP()" class="titulo">Solicitudes Pendientes</h1><h1 class="separador">|</h1><h1 onclick="elegirOpcionA()" class="titulo">Solicitudes Aprobadas</h1>
+    </div>
+    <div id="solicitudesP">
+        <div class="body1">
+            <div id="cartaDeLaSolictud" class="card">
+                <div onclick="viaje()" class="card-content">
+                    <fieldset class="fieldset">
+                        <legend>
+                            <p class="titulo1">Solicitud</p>
+                        </legend>
+                        <p class="acomodarP">Participante: <span class="letra" id="NombreSoli"></span> <span class="letra" id="Apellido1Soli"></span> <span class="letra" id="Apellido2Soli"></span> </p>
+                        <p class="acomodarP">Cedula: <span id="cedSoli"></span></p>
+                        <p class="acomodarP">Numero telefónico: <span id="telefonoSoli"></span></p>
+                        <p class="acomodarP" class="ulti">Correo electrónico: <span id="emailSoli"></span></p>
+                        <br><br>
+                    </fieldset>
+                </div>
+            </div>
+            <h1 id="mensaje" style="display: none;">No hay Solicitudes Pendientes</h1>
+        </div>
+    </div>
+    <div id="solicitudesA" style="display: none;">
+        <div class="body1">
+            <div id="cartaDeLaSolictud2" class="card">
+                <div onclick="viaje()" class="card-content">
+                    <fieldset class="fieldset">
+                        <legend>
+                            <p class="titulo1">Solicitud</p>
+                        </legend>
+                        <p class="acomodarP">Participante: <span class="letra" id="NombreSoli2"></span> <span class="letra" id="Apellido1Soli2"></span> <span class="letra" id="Apellido2Soli2"></span> </p>
+                        <p class="acomodarP">Cedula: <span id="cedSoli2"></span></p>
+                        <p class="acomodarP">Numero telefónico: <span id="telefonoSoli2"></span></p>
+                        <p class="acomodarP" class="ulti">Correo electrónico: <span id="emailSoli2"></span></p>
+                        <br><br>
+                    </fieldset>
+                </div>
+            </div>
+            <h1 id="mensaje2" style="display: none;">No hay Solicitudes Aprobadas</h1>
+        </div>
+    </div>
+    <hr class="espacio1">
+    <hr class="espacio">
+    <div class="fin1">
+        <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+    </div>
+</body>
+<script src="../JS/Admin.js"></script>
+
+
+</html>

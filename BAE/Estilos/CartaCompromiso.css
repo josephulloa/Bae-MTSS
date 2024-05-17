@@ -1,0 +1,34 @@
+.gboton{
+    background-color: #182951;
+    color: #FFFFFF;
+    height: 40px;
+    width: 25%;
+    margin-left: 38%;
+} 
+
+.fin1{
+    margin-top: 1%;
+    background-color: #182951;
+}
+
+#carta_compromiso{
+    width: 70%;
+    padding: 1%;
+    border: #182951 solid;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-bottom: 1%;
+}
+
+.tituloCarta{
+    text-align: center;
+}
+
+#toast-container > .toast-success {
+    position: fixed;
+    left: 40%;
+}

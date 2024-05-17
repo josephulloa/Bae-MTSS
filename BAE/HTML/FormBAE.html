@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../Estilos/FormBAE.css">
+    <link rel="stylesheet" href="../Estilos/stepper.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+
+<body>
+    <iframe src="header.html" width="100%" height="100%" frameborder="0"></iframe>
+    <div id="stepper">
+        <div class="step" data-step="1"><span>Paso 1</span><div class="circle">1</div></div>
+        <div class="step" data-step="2"><span>Paso 2</span><div class="circle">2</div></div>
+        <div class="step" data-step="3"><span>Paso 3</span><div class="circle">3</div></div>
+        <div class="step" data-step="4"><span>Paso 4</span><div class="circle">4</div></div>
+    </div>
+    
+    <div class="formBody1">
+        <div class="formP1">
+            <div>
+                <h1 class="tituloForm">Solicitud de inclusión de proyectos Búsqueda Activa de Empleo (BAE)</h1>
+                <p>Modalidad del Programa Nacional de Empleo (PRONAE) que funciona mediante el otorgamiento de
+                    transferencias
+                    monetarias condicionadas (TMC) dirigidas a las personas usuarias, para que estas puedan cubrir
+                    procesos
+                    de
+                    intermediación de empleo en el marco del Sistema Nacional de Empleo (SNE). Las personas usuarias
+                    deben
+                    cumplir con las disposiciones que establece el programa para poder obtener el beneficio.</p>
+            </div>
+            <!-- --------------------------------------------------------------------------------------------------------------->
+            <div class="FirtsP">
+                <p>Leer cuidadosamente los siguientes términos de uso, privacidad de la información y consentimiento
+                    informado.
+                    Mediante este formulario el Departamento de Intermediación, Orientación y Prospección de Empleo,
+                    Dirección
+                    Nacional de Empleo, procede a la recolecta de datos que puedan inferir o ser datos personales, de
+                    conformidad con la Ley Nª8968: Ley de Protección de la Persona frente al tratamiento de sus datos
+                    personales; por lo que en este registro se requerirá la aceptación del consentimiento informado para
+                    el
+                    tratamiento legítimo de sus datos a fin de ser contactada o contactado en el marco de ejecución del
+                    Sistema
+                    Nacional de Empleo. Se indica que este formulario no constituye ni sustituye el proceso para acceder
+                    a
+                    los
+                    servicios que brinda el Ministerio de Trabajo y Seguridad Social en el marco del SNE.</p>
+                <div>
+                    <label for="consentimiento">¿Acepta el consentimiento informado?</label>
+                    <select name="consentimiento" id="consentimiento">
+                        <option value=""> seleccione</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <img class="logo" src="../img/MTSSAZULYDORADO.png" alt="">
+            </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------------------------------------------- -->
+
+        </div>
+        <div class="divBoton">
+            <button class="eboton" onclick="DataConsentimiento()" id="subir"> Datos Personales</button>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+   
+</body>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+<br>
+<br>
+<div class="fin1">
+    <iframe src="footer.html" width="100%" height="200px" frameborder="0"></iframe>
+</div>
+<script src="../JS/stepper.js"></script>
+<script src="../JS/BAE.js"></script>
+
+
+
+</body>
+</html>

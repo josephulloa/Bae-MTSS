@@ -1,0 +1,95 @@
+.documento-container {
+    margin-bottom: 20px;
+    /* Ajusta este valor según sea necesario */
+}
+
+.body1{
+    height: 400px;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.separador{
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #182951;
+}
+
+#mensaje,#mensaje2{
+    margin-top: 10%;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.475);
+}
+
+.fin1 {
+    background-color: #182951;
+}
+
+.fieldset {
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #182951;
+}
+
+.espacio{
+    background-color:#CFAC65;
+    height: 3px;
+}
+
+.espacio1 {
+    background-color:#182951;
+    height: 3px;
+}
+
+.titulo1 {
+    text-align: center;
+    font-family: "Henderson";
+    font-size: 25px;
+}
+
+.titulo{
+    text-align: center;
+    color: #182951;
+    font-family: "Henderson";
+}
+
+.card {
+    width: 300px;
+    border: 3px solid #182951;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.card {
+    margin-left: 34.5%;
+    width: 30%;
+    height: 65%;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.acomodarP{
+    margin-top: 16px;
+}
